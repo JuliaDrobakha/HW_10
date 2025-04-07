@@ -1,0 +1,28 @@
+    1  git config --global user.name "Julia Drobakha"
+    2   git config --global user.email sjv.mk.ua@gmail.com
+    3  git clone https://github.com/JuliaDrobakha/HW_10.git
+    4  cd HW_10
+    5  touch text_ignore.txt
+    6  .gitignore 
+    7  text_ignore.txt
+    8  git status
+    9  git add  text_ignore.txt 
+   10  git commit -m "Додано text_ignore.txt до .gitignore"
+   11  touch main_test.txt
+   12  git add main_test.txt
+   13  git commit -m "Створення файлу main_test.txt"
+   14  git checkout -b develop 
+   15  touch develop_test.txt 
+   16  git add develop_test.txt 
+   17  git commit -m "Створення файлу develop_test.txt" 
+   18   develop_test.txt "just a small change"
+   19  git status
+   20  git add develop_test.txt
+   21  git commit -m "Додано зміни до develop_test.txt"
+   22  git checkout main
+   23  git merge develop
+   24  git add .
+   25  git commit
+   26  git log
+   27  clear
+   28  history > command_list.csv 
